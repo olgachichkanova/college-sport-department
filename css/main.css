@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff');
+    font-weight: 700;
+    font-style: bold;
+  }
+  
+  body {
+    font-family: Open Sans, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .header {
+    background-image: url("../img/football_767.jpg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    
+    padding-top: 30px;
+    padding-bottom: 135px;
+    
+    max-width: 320px;
+  }
+  
+  .header::after{
+    content:"";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .container {
+      position: relative;
+      z-index: 1;
+      max-width: 280px;
+      margin: 0 auto;
+      display: flex;
+  }
+
+  .img-logo {
+      fill: #ffffff;
+      width: 190px;
+      justify-content: center;
+  }
