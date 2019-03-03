@@ -24,10 +24,12 @@
     background-size: cover;
     background-position: center center;
     position: relative;
+
+    padding-top: 40px;
+    padding-bottom: 80px;
     
-    padding-top: 30px;
-    padding-bottom: 135px;
-    
+    height: 100vh;
+    width: 100%;
     max-width: 320px;
   }
   
@@ -50,8 +52,65 @@
       display: flex;
   }
 
-  .img-logo {
-      fill: #ffffff;
-      width: 190px;
-      justify-content: center;
+  .logo {
+    justify-content: center;
+    margin-bottom: 145px;
   }
+  
+  .logo-img {
+      fill: #ffffff;
+      height: 32px;
+  }
+
+  .titles, .buttons {
+    flex-wrap: wrap;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2; 
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .title:nth-last-child(1) {
+    padding-left: 45px;
+    padding-top: 25px;
+  }
+
+  .buttons {
+    margin-top: 90px;
+  }
+
+  .button {
+    background-color: #5e42b0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    padding-left: 80px;
+    border-radius: 25px;
+  }
+
+  .button:nth-last-child(1) {
+    margin-top: 15px;
+  }
+  .button-img {
+    height: 24px;
+    fill: #ffffff;
+  }
+
+  .button-text {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 8px;
+    line-height: 1.2;
+  }
+
+  
+  .text-decoration {
+    font-weight: bold;
+  }
+  
