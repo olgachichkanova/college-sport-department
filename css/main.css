@@ -91,6 +91,8 @@
     width: 100%;
     padding-left: 80px;
     border-radius: 25px;
+    display: flex;
+    
   }
 
   .button:nth-last-child(1) {
@@ -99,6 +101,7 @@
   .button-img {
     height: 24px;
     fill: #ffffff;
+    margin-right: 10px;
   }
 
   .button-text {
@@ -107,10 +110,85 @@
     text-transform: uppercase;
     font-size: 8px;
     line-height: 1.2;
+    align-self: center;
   }
 
   
   .text-decoration {
     font-weight: bold;
   }
+  
+  .athlets {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    
+  }
+  .section-title {
+    font-size: 55px;
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin: 0 20px;
+    margin-top: 25px;
+  }
+  
+  .section-item {
+    padding: 60px 20px;
+  }
+
+  .section-item:nth-child(3n-1) {
+    background-color: #fafafa;
+  }
+
+  .section-item:nth-child(3n) {
+    background-color: #f5f4f9;
+  }
+
+  .section-item:nth-child(3n+1) {
+    background-color: #5e42b0;
+    color: #ffffff;
+  }
+  
+  .sections-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .section-item-title {
+    display: flex;
+  }
+
+  .item-title {
+    font-size: 23px;
+    color: rgb(193, 193, 193);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .number {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .number::after {
+    content:"";
+    display: block;
+    width: 15px;
+    border-bottom: 4px solid #5e42b0;
+  }
+  
+  .number:nth-child(3)::after {
+    content:"";
+    display: block;
+    width: 15px;
+    border-bottom: 4px solid #ffffff;
+  }
+
+  
   
