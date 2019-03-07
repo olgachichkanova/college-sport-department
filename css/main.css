@@ -75,9 +75,8 @@
     margin: 0;
   }
   
-  .title:nth-last-child(1) {
+  .title-decoration {
     padding-left: 45px;
-    padding-top: 25px;
   }
 
   .buttons {
@@ -85,23 +84,21 @@
   }
 
   .button {
-    background-color: #5e42b0;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 100%;
-    padding-left: 80px;
-    border-radius: 25px;
     display: flex;
-    
+    align
   }
 
   .button:nth-last-child(1) {
     margin-top: 15px;
   }
+
   .button-img {
     height: 24px;
     fill: #ffffff;
-    margin-right: 10px;
+    margin-right: 5px;
+    display: block;
+    float: left;
+
   }
 
   .button-text {
@@ -111,6 +108,20 @@
     font-size: 8px;
     line-height: 1.2;
     align-self: center;
+    background-color: #5e42b0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    padding-left: 80px;
+    border-radius: 25px;
+  }
+
+  .apple {
+    padding-right: 85px;
+  }
+
+  .google {
+    padding-right: 115px;
   }
 
   
@@ -118,11 +129,10 @@
     font-weight: bold;
   }
   
-  .athlets {
+  .section {
     display: flex;
     flex-wrap: wrap;
     max-width: 320px;
-    
   }
   .section-title {
     font-size: 55px;
@@ -136,24 +146,28 @@
   
   .section-item {
     padding: 60px 20px;
+    
   }
 
-  .section-item:nth-child(3n-1) {
+  .section-item:nth-of-type(1) {
     background-color: #fafafa;
+    padding-top: 80px;
   }
 
-  .section-item:nth-child(3n) {
+  .section-item:nth-of-type(2) {
     background-color: #f5f4f9;
   }
 
-  .section-item:nth-child(3n+1) {
+  .section-item:nth-of-type(3) {
     background-color: #5e42b0;
     color: #ffffff;
   }
   
-  .sections-img {
+  .section-img {
     display: block;
     margin: 0 auto;
+    position: relative;
+    top: 50px;
   }
 
   .section-item-title {
