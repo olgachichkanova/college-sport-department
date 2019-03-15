@@ -175,6 +175,11 @@
     .logo {
       margin-bottom: 20%;
     }
+
+    .titles, .buttons, .footer-titles {
+      flex-wrap: wrap;
+      width: 70%;
+    }
     
     .titles {
       width: 280px;
