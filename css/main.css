@@ -845,7 +845,7 @@
     .footer {
       background-image: url("../img/game_1920.jpg");
 
-      padding-top: 13%;
+      padding-top: 12%;
       padding-bottom: 2%;
     }
 
@@ -858,14 +858,14 @@
       height: 137px;
       padding: 15px;
       border-radius: 25px;
-      margin-bottom: 125px;
+      margin-right: 2%;
+      align-self: baseline;
     }
     
     .footer-titles {
       flex-direction: column;
       align-items: center;
       margin:0;
-      width: 100%
     }
 
     .footer-title {
@@ -874,14 +874,15 @@
     }
     
     .footer-subtitle {
-      font-size: 2.25rem;
+      font-size: 1.8rem;
       margin: 0;
-      margin-bottom: 37%;
+      text-align: left;
+      margin-bottom: 30%;
     }
 
     .logo-footer-down {
-      margin: 0;
-      padding-top: 50px;
+      margin: 0 auto;
+      padding-top: 14%;
     }
 }
 
