@@ -12,8 +12,234 @@
     font-style: bold;
   }
   
+  body {
+    font-family: Open Sans, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    box-sizing: border-box;
+    
+    
+    height: 100%;
+    width: 100%;
+  }
+  
+  .header::after{
+    content:"";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+  .logo-img {
+      fill: #ffffff;
+  }
+
+  .title {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2; 
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .title-decoration {
+    display: block;
+  }
+
+  .button {
+    display: flex;
+
+  }
+
+  .button-img {
+    height: 24px;
+    fill: #ffffff;
+    display: block;
+    float: left;
+  }
+
+  .button-text {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.2;
+    align-self: center;
+    background-color: #5e42b0;
+    width: 100%;
+  }
+  
+  .text-decoration {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    counter-reset: number;
+  }
+
+  .section-title {
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .section-item:nth-of-type(1) {
+    background-color: #fafafa;
+  }
+
+  .section-item:nth-of-type(2) {
+    background-color: #f5f4f9;
+  }
+
+  .section-item:nth-of-type(3) {
+    background-color: #5e42b0;
+    color: #ffffff;
+  }
+
+  .section .section-background {
+    background-color: #0a0e34;
+  
+  }
+  
+  .section-img {
+    display: block;
+  }
+
+  .item-title,.article-title {
+    color: rgb(193, 193, 193);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .item-title::before {
+    counter-increment: number;
+    content: "0" counter(number);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 0;
+    margin-right: 10px;
+    border-bottom: 4px solid #5e42b0;
+    position: relative;
+    top: -5px;
+  }
+  
+
+  .growth_football::before {
+    border-bottom: 4px solid #ffffff;
+  }
+
+  .growth_basketball::before {
+    color: #8765dd;
+    border-bottom: 4px solid #ffffff;
+  }
+  
+  .article-title {
+    margin: 0;
+  }
+
+  .article-text {
+    padding: 0 6%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .item-img {
+    width: 100%;
+  }
+  
+  .decoration {
+    font-weight: bold;
+    background-color: #5e42b0;
+    color: #ffffff;
+    margin-right: 10px;
+    position: relative;
+    top: -80px;
+  }
+
+  .decoration::after {
+    content: "";
+    border-bottom: 4px solid rgb(255, 255, 255, 0.3);
+    position: absolute;
+  }
+ 
+  .footer {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    box-sizing: border-box;
+    
+    height: 100%;
+    width: 100%;
+  }
+  
+  .footer::after{
+    content:"";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo-img {
+    fill: #ffffff;
+    background-image: linear-gradient(#7655d6, #51389c);
+    align-self: center;
+  }
+  
+  .footer-title {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .footer-subtitle {
+    color: rgb(155, 142, 193);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
   
   @media (max-width: 640px) {
+
+    body {
+      font-size: 0.9rem;
+    }
     
     .header {
       background-image: url("../img/football_767.jpg");
@@ -208,6 +434,10 @@
   }
 
   @media (min-width: 641px) and (max-width: 960px) {
+
+    body {
+      font-size: 1rem;
+    }
 
     .header {
       background-image: url("../img/football_1280.jpg");
@@ -433,410 +663,235 @@
       margin: 0 auto;
     }
 
-    
+
   }
 
-  @media (min-width: 961px) and (max-width: 1920px) {
+  @media (min-width: 961px) {
+
+    body {
+      font-size: 1.5rem;
+    }
+
     .header {
-      background-image: url("../img/football_1280.jpg");
+      background-image: url("../img/football_1920.jpg");
 
       padding-top: 2%;
       padding-bottom: 6%;
     }
 
-  .container {
-    width: 82%;
-    margin: 0 auto;
-  }
-
-  .logo {
-    margin-bottom: 23%;
-  }
-
-  .logo-img {
-      height: 52px;
-  }
-  .titles {
-    width: 590px;
-  }
-  
-  .title {
-    font-size: 4rem;
-  }
-
-  .title-decoration {
-    padding-left: 16%;
-    margin-bottom: 40%;
-  }
-
-  .buttons {
-    width:85%;
-  }
-
-  .button {
-    width: 310px;
-  }
-
-  .button:nth-last-child(1) {
-    margin-left: 4%;
-  }
-
-  .button-img {
-    margin-right: 30px;
-  }
-
-  .button-text {
-    font-size: 14px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-    border-radius: 40px;
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
     
-  }
+    .logo {
+      margin-bottom: 20%;
+    }
 
-  .apple {
-    padding-right: 8%;
-  }
+    .logo-img {
+        height: 52px;
+    }
+    
+    .title {
+      font-size: 5.5rem;
+      
+    }
 
-  .google {
-    padding-right: 10%;
-  }
+    .title-decoration {
+      padding-left: 27%;
+      margin-bottom: 12%;
+      display: inline-block;
+    }
 
-  .section {
-    position: relative;
-    overflow: hidden;
-  }
+    .buttons {
+      width:85%;
+    }
 
-  .section-img {
-    position: absolute;
-  }
+    .button {
+      width: 310px;
+    }
 
-  .football+.section-img {
-    right: 500px;
-    margin-top: 95px;
-    height: 700px;
-  }
+    .button:nth-last-child(1) {
+      margin-left: 4%;
+    }
 
-  .basketball+.section-img {
-    right: -245px;
-    margin-top: 39px;
-    height: 570px;
-  }
+    .button-img {
+      margin-right: 15px;
+    }
 
-  .section-item {
-    padding: 5% 0;
-  }
+    .button-text {
+      font-size: 14px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 50px;
+      border-radius: 40px;
+      
+    }
 
-  .section-item:nth-of-type(1) {
-    padding-top: 7%;
-  }
-  
-  .football~.section-item{
-    padding-left: 37.5%;
-    padding-right: 3.5%
-  }
+    .apple {
+      padding-right: 8%;
+    }
 
-  .basketball~.section-item{
-    padding-left: 3.5%;
-    padding-right: 46.5%;
-  }
+    .google {
+      padding-right: 10%;
+    }
 
-  .section-title, .article-title {
-    font-size: 5rem;
-    margin: 0;
-    margin-top: 86px;
-  }
+    .section {
+      position: relative;
+      overflow: hidden;
+    }
 
-  .article-title {
-    opacity: 0.4;
-  }
+    .section-img {
+      position: absolute;
+    }
 
-  .football {
-    margin-left: 37.5%;
-  }
+    .football+.section-img {
+      right: 52%;
+      margin-top: 30px;
+      height: 900px;
+    }
 
-  .basketball {
-    margin-left: 3.5%;
-  }
+    .basketball+.section-img {
+      right: 6.2%;
+      margin-top: 25px;
+      height: 810px;
+    }
 
-  .item-title{
-    font-size: 1.4rem;
-  }
+    .section-item {
+      padding: 3% 0;
+    }
 
-  .item-title::before {
-    font-size: 0.87rem;
-  }
+    .section-item:nth-of-type(1) {
+      padding-top: 5%;
+    }
+    
+    .football~.section-item{
+      padding-left: 52%;
+      padding-right: 10%
+    }
 
-  .decoration {
-    font-size: 1.5rem;
-    padding: 50px;
-  }
+    .basketball~.section-item{
+      padding-left: 10%;
+      padding-right: 50%;
+    }
 
-  .decoration::after {
-    width: 30px;
-    left: calc(50% - 15px);
-    top: calc(50% + 0.7em);
-  }
+    .section-title, .article-title {
+      font-size: 5rem;
+      margin: 0;
+      margin-top: 7%;
+    }
 
-  .footer {
-    background-image: url("../img/game_1280.jpg");
+    .football {
+      margin-left: 52%;
+    }
 
-    padding-top: 16%;
-    padding-bottom: 3%;
-  }
+    .basketball {
+      margin-left: 10%;
+    }
 
-  .footer-logo-img {
-    width: 130px;
-    height: 137px;
-    padding: 15px;
-    border-radius: 25px;
-    margin-bottom: 125px;
-  }
-  
-  .footer-titles {
-    flex-direction: column;
-    align-items: center;
-    margin:0;
-    width: 100%
-  }
+    .item-title{
+      font-size: 1.4rem;
+    }
 
-  .footer-title {
-    font-size: 5rem;
-    margin: 0;
-  }
-  
-  .footer-subtitle {
-    font-size: 2.25rem;
-    margin: 0;
-    margin-bottom: 37%;
-  }
+    .item-title::before {
+      font-size: 0.87rem;
+    }
 
-  .logo-footer-down {
-    margin: 0;
-    padding-top: 50px;
-  }
+    .article-item {
+        display: flex;
+      }
+
+    .img-container {
+      width: 50%;
+    }
+
+    .item-img {
+      height: 100%;
+    }
+
+    .article-text {
+      width: 50%;
+      box-sizing: border-box;
+      margin: auto;
+    }
+
+    .article-title {
+      font-size: 5rem;
+      opacity: 0.4;
+      margin-bottom: 6%;
+    }
+
+    .find-contact {
+      flex-direction: row-reverse;
+    }
+
+    .decoration {
+      font-size: 1.5rem;
+      padding: 8%;
+      right: 25%;
+      top: 140px;
+    }
+
+    .find-contact .decoration {
+      left: calc(100% + 50px);
+    }
+
+    .decoration::after {
+      width: 30px;
+      left: calc(50% - 15px);
+      top: calc(50% + 0.7em);
+    }
+
+    .footer {
+      background-image: url("../img/game_1920.jpg");
+
+      padding-top: 13%;
+      padding-bottom: 2%;
+    }
+
+    .footer-container {
+      flex-direction: row;
+    }
+
+    .footer-logo-img {
+      width: 130px;
+      height: 137px;
+      padding: 15px;
+      border-radius: 25px;
+      margin-bottom: 125px;
+    }
+    
+    .footer-titles {
+      flex-direction: column;
+      align-items: center;
+      margin:0;
+      width: 100%
+    }
+
+    .footer-title {
+      font-size: 5rem;
+      margin: 0;
+    }
+    
+    .footer-subtitle {
+      font-size: 2.25rem;
+      margin: 0;
+      margin-bottom: 37%;
+    }
+
+    .logo-footer-down {
+      margin: 0;
+      padding-top: 50px;
+    }
 }
 
-  @media (min-width: 1921px) {
+  /* @media (min-width: 1921px) {
     .header {
       background-image: url("../img/football_1920.jpg");
     }
-  }
+  } */
 
-  body {
-    font-family: Open Sans, Arial, sans-serif;
-    margin: 0;
-  }
   
-  .header {
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-
-    box-sizing: border-box;
-    
-    
-    height: 100%;
-    width: 100%;
-  }
-  
-  .header::after{
-    content:"";
-    background-color: #0a0e34;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .container {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-}
-
-  .logo-img {
-      fill: #ffffff;
-  }
-
-  .title {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2; 
-    text-transform: uppercase;
-    margin: 0;
-  }
-  
-  .title-decoration {
-    display: block;
-  }
-
-  .button {
-    display: flex;
-
-  }
-
-  .button-img {
-    height: 24px;
-    fill: #ffffff;
-    display: block;
-    float: left;
-  }
-
-  .button-text {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 1.2;
-    align-self: center;
-    background-color: #5e42b0;
-    width: 100%;
-  }
-  
-  .text-decoration {
-    font-weight: bold;
-    display: block;
-  }
-  
-  .section {
-    display: flex;
-    flex-direction: column;
-    counter-reset: number;
-  }
-
-  .section-title {
-    color: rgb(231, 231, 231);
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .section-item:nth-of-type(1) {
-    background-color: #fafafa;
-  }
-
-  .section-item:nth-of-type(2) {
-    background-color: #f5f4f9;
-  }
-
-  .section-item:nth-of-type(3) {
-    background-color: #5e42b0;
-    color: #ffffff;
-  }
-
-  .section .section-background {
-    background-color: #0a0e34;
-  
-  }
-  
-  .section-img {
-    display: block;
-  }
-
-  .item-title,.article-title {
-    color: rgb(193, 193, 193);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    margin-left: 10px;
-  }
-
-  .item-title::before {
-    counter-increment: number;
-    content: "0" counter(number);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    margin: 0;
-    margin-right: 10px;
-    border-bottom: 4px solid #5e42b0;
-    position: relative;
-    top: -5px;
-  }
-  
-
-  .growth_football::before {
-    border-bottom: 4px solid #ffffff;
-  }
-
-  .growth_basketball::before {
-    color: #8765dd;
-    border-bottom: 4px solid #ffffff;
-  }
-  
-  .article-title {
-    margin: 0;
-  }
-
-  .article-text {
-    padding: 0 6%;
-    padding-top: 40px;
-    padding-bottom: 80px;
-  }
-
-  .item-img {
-    width: 100%;
-  }
-  
-  .decoration {
-    font-weight: bold;
-    background-color: #5e42b0;
-    color: #ffffff;
-    margin-right: 10px;
-    position: relative;
-    top: -80px;
-  }
-
-  .decoration::after {
-    content: "";
-    border-bottom: 4px solid rgb(255, 255, 255, 0.3);
-    position: absolute;
-  }
- 
-  .footer {
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-
-    box-sizing: border-box;
-    
-    height: 100%;
-    width: 100%;
-  }
-  
-  .footer::after{
-    content:"";
-    background-color: #0a0e34;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .footer-logo-img {
-    fill: #ffffff;
-    background-image: linear-gradient(#7655d6, #51389c);
-  }
-  
-  .footer-title {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-  }
-  
-  .footer-subtitle {
-    color: rgb(155, 142, 193);
-    text-transform: uppercase;
-    line-height: 1.2;
-  }
   
   
   
