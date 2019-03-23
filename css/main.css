@@ -489,11 +489,11 @@
     }
 
     .apple {
-      padding-right: 8%;
+      padding-right: 55px;
     }
   
     .google {
-      padding-right: 10%;
+      padding-right: 75px;
     }
 
     .section {
@@ -709,11 +709,11 @@
     }
 
     .apple {
-      padding-right: 8%;
+      padding-right: 150px;
     }
 
     .google {
-      padding-right: 10%;
+      padding-right: 195px;
     }
 
     .section {
@@ -784,6 +784,7 @@
 
     .img-container {
       width: 50%;
+      font-size: 0;
     }
 
     .article-text {
