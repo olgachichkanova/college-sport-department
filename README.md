@@ -1,2 +1,2 @@
 # repo-mqdiploma-chichkanova
-Diploma for netology mq-14
+Web page for college sport department
